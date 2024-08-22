@@ -1,0 +1,155 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/woojuck-woojuck/AIFFEL_quest_cr/blob/master/Python/SubQuestC01\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "word = input('단어를 입력하세요: ')\n",
+        "\n",
+        "# 입력한 단어 출력\n",
+        "print(f\"입력한 단어: {word}\")\n",
+        "\n",
+        "# 공백, 대소문자, 특수문자를 무시하고 회문을 판별하기 위해 처리\n",
+        "cleaned_word = ''.join(e for e in word if e.isalnum()).lower()\n",
+        "\n",
+        "# 단어 뒤집기\n",
+        "reversed_word = cleaned_word[::-1]\n",
+        "\n",
+        "# 뒤집은 단어 출력\n",
+        "print(f\"뒤집은 단어: {reversed_word}\")\n",
+        "\n",
+        "is_palindrome = True  # 회문 판별값을 저장할 변수, 초깃값은 True\n",
+        "for i in range(len(cleaned_word) // 2):\n",
+        "    if cleaned_word[i] != cleaned_word[-1 - i]:  # 문자가 다르면 회문이 아님\n",
+        "        is_palindrome = False\n",
+        "        break\n",
+        "\n",
+        "# 회문 여부 출력\n",
+        "if is_palindrome:\n",
+        "    print(f\"'{word}'은(는) 회문입니다.\")\n",
+        "else:\n",
+        "    print(f\"'{word}'은(는) 회문이 아닙니다.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eQquMb7bx_SG",
+        "outputId": "f3d47525-8629-47e1-a6cf-45a1b98778d6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "단어를 입력하세요: hello\n",
+            "입력한 단어: hello\n",
+            "뒤집은 단어: olleh\n",
+            "'hello'은(는) 회문이 아닙니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#단어 뒤집기\n",
+        "word = \"banana apple fruite vechile \"\n",
+        "cleaned_word = ''.join(e for e in word if e.isalnum()).lower()\n",
+        "print(cleaned_word)\n",
+        "reversed_word = cleaned_word[::-1]\n",
+        "print(f\"뒤집은 단어: {reversed_word}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Om5vyOmR184S",
+        "outputId": "75b165ca-3cd9-4efb-8896-36cdc7265acb"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "bananaapplefruitevechile\n",
+            "뒤집은 단어: elihcevetiurfelppaananab\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**회문 판별기**\n",
+        "================\n",
+        "\n",
+        "\n",
+        "\n",
+        "1.   원리\n",
+        "    *   입력된 문자를 A라고 한다.\n",
+        "\n",
+        "    *   뒤집은 문자를 B를 한다.\n",
+        "\n",
+        "    *   A와 B를 비교한다.\n",
+        "\n",
+        "\n",
+        "2.   코드 설명\n",
+        "    \n",
+        "    *   cleaned_word = ''.join(e for e in word if e.isalnum()).lower()\n",
+        ">* for e in word 문자열의 각 문자('e')를 차례대로 반복.\n",
+        ">* if e.isalnum() 메서드 isalnum() 는 문자'e'가 영문자 또는 숫자인지 구분. 영어와 숫자면 Ture 아니면 False\n",
+        ">* ''.join(...) join이라는 메서드를 사용하여 리스트나 반복 가능한 객체 요소들을 문자열로 연결\n",
+        "\n",
+        "    * reversed_word = cleaned_word[::-1]\n",
+        "> * cleaned_word[::-1] 파이썬의 슬라이싱 기능을 써서 문자열을 뒤집는다. 시작과 끝은 생략되고 -1이라는 증가폭 단위만 있기에 오른쪽에서 왼쪽으로 읽음.\n",
+        ">* reversed_word에 저장.\n",
+        "\n",
+        "    * for i in range(len(cleaned_word) // 2):\n",
+        "    >* len(cleaned_word) // 2 문자열을 세고 반으로 나눈다.\n",
+        "    >* for i in range 'i'는 '0'부터 지정된 범위까지 차례대로 값을 가지는 반복문.\n",
+        "  \n",
+        "  * if cleaned_word[i] != cleaned_word[-1 - i]:\n",
+        "  >* 문자열의 앞과 뒤에서 대칭되는 문자 비교. i=0일때 i=-1이랑 비교 i=1일때 i=-2랑 비교.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "eKzyjp0U2iUL"
+      }
+    }
+  ]
+}
