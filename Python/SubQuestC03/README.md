@@ -1,5 +1,5 @@
 # AIFFEL Campus Online Code Peer Review Templete
-- 코더 : 안진덕
+- 코더 : 안진덕, 강윤제
 - 리뷰어 : 김지혜
 
 
