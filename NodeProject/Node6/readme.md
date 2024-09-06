@@ -2,5 +2,21 @@
 =========================
 --------------------------------------
 
-의사결정나무, 랜덤포레스트, SVM, SGD, logistic regression 모델
+### 사용모델
 
++ DecisionTree
++ RandomForest
++ SVM
++ SGD
++ Logistic Regression
+
+
+  ------------------------
+
+  ### 평가 지표
+
+  + Accuracy
+  + Precision
+  + Recall
+  + F1-score
+  + Confusion Matrix
