@@ -1,3 +1,8 @@
+Pneumonia.ipynb 파일은 메인 퀘스트 노드를 수행했을때 노트북
+Pneumonia2.ipynb 파일은 Res-Net18 구조로 메인 퀘스트를 수행했을때 노트북
+
+
+
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 코더의 이름을 작성하세요.
 - 리뷰어 : 리뷰어의 이름을 작성하세요.
