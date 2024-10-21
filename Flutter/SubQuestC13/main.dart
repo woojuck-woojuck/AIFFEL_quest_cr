@@ -1,3 +1,6 @@
+// iscat의 변수는 잘 들어갔는데 is_cat 변수로 했을 때 힘들었다. 
+
+
 import 'package:flutter/material.dart';
 import 'cat.dart';
 import 'dog.dart';
