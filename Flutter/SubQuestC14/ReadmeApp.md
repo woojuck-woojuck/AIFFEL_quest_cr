@@ -37,7 +37,7 @@
 
 ### 구현 영상
 -------------------------
-![quest_fight_app](https://github.com/user-attachments/assets/174153c6-d649-40c3-ae74-f94614a1c75e)
+![ezgif com-resize](https://github.com/user-attachments/assets/f9830632-91fb-4161-82e3-32186342bd0e)
 
 
 ### 참고 학습 자료
