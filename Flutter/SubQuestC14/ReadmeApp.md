@@ -23,6 +23,7 @@
 
 ### 프로토 타이핑 (MarvelApp)
 --------------------
+![aiffelapp](https://github.com/user-attachments/assets/82bb0e30-c97b-4ad4-83e5-227259279f36)
 
 
 ### 페이지 구현
