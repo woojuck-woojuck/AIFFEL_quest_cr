@@ -22,13 +22,14 @@
     학습률 파라미터를 다양하게 변경하며 시도했습니다.
         
 - [O]  **4. 회고를 잘 작성했나요?**
+  
     ![image](https://github.com/user-attachments/assets/913a3883-2ed2-440b-a738-8cc797b66f4d)  
   
     모델을 다루는 부분이 보다 익숙해졌다고 작성해주셨습니다.
         
 - [O]  **5. 코드가 간결하고 효율적인가요?**
-    ![image](https://github.com/user-attachments/assets/540deb08-6c96-4da3-9214-ba156302de08)  
   
+    ![image](https://github.com/user-attachments/assets/540deb08-6c96-4da3-9214-ba156302de08)  
      함수화가 잘 되었습니다
 
 # 회고(참고 링크 및 코드 개선)
