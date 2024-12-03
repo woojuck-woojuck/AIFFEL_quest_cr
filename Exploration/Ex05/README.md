@@ -1,5 +1,5 @@
-untitled.ipynb: 프로젝트 파일
-gif와 png는 결과 파일
+untitled9.ipynb: 프로젝트 파일
+dcgan.gif와 png는 결과 파일
 =================================
 
 
